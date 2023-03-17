@@ -1,0 +1,32 @@
+logging:
+  level:
+    me:
+      dyatkokg:
+        geocodetask:
+          client:
+            YandexGeocoderClient: DEBUG
+
+api:
+  external:
+    yandex-geocoder:
+      name: yandex-geocoder-client
+      url: https://geocode-maps.yandex.ru/1.x/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  data:
+    mongodb:
+      host: ${MONGO_HOST}
+      port: 27017
+      database: Geocoder_API
